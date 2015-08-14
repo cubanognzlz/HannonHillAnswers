@@ -18,6 +18,7 @@ public class HannonHillSecret {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // This is a placeholder for the provided value of N
         final int N = 55;
         int currentNum = 0;
         int x = 0;
@@ -78,6 +79,7 @@ public class HannonHillSecret {
     // in Secret adhering to the additive property
     private static boolean isSecretAdditive(Integer x, Integer y)
     {
+        //This is assuming secret is a static method within a class named Secret
         return (Secret.secret(x + y) == (Secret.secret(x) + Secret.secret(y)));
     }
 }
